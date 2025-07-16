@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  align-items: center;        /* Centra verticalmente reloj y carrusel */
+  gap: 20px;
+  padding: 10px 10px;
+  background: #111;
+  border-bottom: 2px solid #222;
+}
+
+.clock-widget {
+  width: 200px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: #1a1a1a;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.carousel {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+#weather-cards {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.weather-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 15px;
+  background: #222;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 1s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.weather-card.active {
+  opacity: 1;
+  z-index: 1;
+  position: relative;
+}
+
+.card-content {
+  display: flex;
+  justify-content: flex-start; /* ✅ Todo alineado a la izquierda */
+  align-items: flex-start;
+  width: 100%;
+  gap: 50px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 140px;
+}
+
+.current {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  margin-top: 4px;
+}
+
+.temp-desc {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.95em;
+  line-height: 1;
+}
+
+.temp {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.desc {
+  font-size: 2em;
+  color: #ccc;
+}
+
+.hours {
+  display: flex;
+  gap: 13px;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  padding-left: 10px;
+  max-width: 100%;
+  flex-shrink: 1;
+}
+
+
+.hour {
+  background: #333;
+  padding: 4px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 0.8em;
+  min-width: 45px;
+}
+
+.city {
+  font-weight: bold;
+  font-size: 1.5em; /* tamaño nuevo */
+  /* resto de estilos */
+}
+
+.side-image {
+  width: 200px;
+  height: 120px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.side-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}

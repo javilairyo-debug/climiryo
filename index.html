@@ -1,0 +1,28 @@
+  <head>
+    <meta charset="UTF-8" />
+    <title>relojyrio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+            <div class="side-image">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Iryo_2021_logo.svg/512px-Iryo_2021_logo.svg.png"/>
+  </div>
+      
+
+      <div id="carousel" class="carousel">
+        <!-- Aquí se inyectan las tarjetas del clima por JS -->
+        <div id="weather-cards"></div>
+      </div>
+<div class="clock-widget">
+        <iframe
+          src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=large&timezone=Europe%2FMadrid"
+          width="350"
+          height="140"
+          frameborder="0"
+          seamless
+        ></iframe>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
