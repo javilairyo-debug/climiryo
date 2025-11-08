@@ -21,7 +21,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  background: #1a1a1a;
   border-radius: 8px;
   padding: 5px;
 }
