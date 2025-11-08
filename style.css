@@ -34,11 +34,11 @@ body {
 }
 
 .main-title {
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 800;
   letter-spacing: 1px;
   text-align: center;
-  color: #b60000;
+  color: #ffffff;
   flex: 1; /* <- para que el título se estire y centre */
 }
 
