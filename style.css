@@ -94,10 +94,10 @@ body {
     font-family: "DSEG7Classic", monospace;
     font-size: 50px;
     color: #d60000;
-    letter-spacing: 8px;
+    letter-spacing: 0px;
     display: flex;
     align-items: baseline;
-    margin-top: 20px; /* separa del resto de widgets si quieres */
+    margin-top: 10px; /* separa del resto de widgets si quieres */
   }
 
   #clock-container .seconds {
