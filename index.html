@@ -54,9 +54,25 @@ setTimeout(()=>{
 },1500);
 </script>
 
+<!-- RELOJ DSEG 7 SEGMENTOS -->
+  <div class="clock" id="clock-container">
+    <span class="hours-minutes">--:--</span>
+    <span class="seconds">--</span>
+  </div>
+</div>
 
-
-        <iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:180px;height:60px;"src="https://www.clocklink.com/html5embed.php?clock=004&timezone=CET&color=red&size=180&Title=&Message=&Target=&From=2025,1,1,0,0,0&Color=red"></iframe>
+<script>
+  function updateClock(){
+    const now = new Date();
+    const h = String(now.getHours()).padStart(2,'0');
+    const m = String(now.getMinutes()).padStart(2,'0');
+    const s = String(now.getSeconds()).padStart(2,'0');
+    document.querySelector('#clock-container .hours-minutes').textContent = `${h}:${m}`;
+    document.querySelector('#clock-container .seconds').textContent = s;
+  }
+  updateClock();
+  setInterval(updateClock, 1000);
+</script>
  
     </div>
   </body>
