@@ -83,3 +83,24 @@ body {
 .widget-rotator .widget.active {
   opacity:1;
 }
+
+@font-face {
+  font-family: "DSEG7Classic";
+  src: url("https://raw.githack.com/javilairyo-debug/climiryo/main/DSEG7ClassicMini-Bold.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+#clock-container {
+    font-family: "DSEG7Classic", monospace;
+    font-size: 50px;
+    color: #d60000;
+    letter-spacing: 8px;
+    display: flex;
+    align-items: baseline;
+    margin-top: 20px; /* separa del resto de widgets si quieres */
+  }
+
+  #clock-container .seconds {
+    font-size: 50%;
+    margin-left: 0px;
+  }
